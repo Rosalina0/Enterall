@@ -1,0 +1,185 @@
+<!doctype html>
+<html LANG="EN">
+
+<head>
+    <title> NCC Sports Academy </title>
+    <META CHARSET="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="ncclogo">
+                <img src="../pics/logo.png" alt=" sports academy logo" id="logo" />
+                <!--Logo of the sports academy-->
+            </div>
+            <div id="caption">
+                <h1>NCC Sports Academy</h1>
+            </div>
+            <div id="searchbar">
+                <img src="../pics/global.png" alt="globe representing language" id="glow" />
+                <a href="../pages/registration.html" class="form">SIGN IN</a>
+                <form method="get" action="http://www.google.com/search">
+                    <input type="text" id="bar" name="q" class="search-txt" maxlength="225" value="Google Search" onfocus="if(this.value==this.defaultValue) this value=''; this.style.color=black'; " onblur="if(this.value=='')this value=this defaultValue; " />
+                    <input type="submit" id="search" name="gsubmit" value="GO" />
+                    <a class="search-btn" href="#"><i class = "fas fa search"></i></a>
+                </form>
+            </div>
+			
+        </header>
+        <div class="clearfloat"> </div>
+        <div class="mobile-container">
+            <div class="nav">
+			<a href="#origin" id="hq" class="active">Champions are Champions</a>
+			<div id="links">
+                <a href="../index.html" id="home"> Homepage </a>
+                <a href="../pages/Activities.html" id="ac"> Activities </a>
+                <a href="../pages/About.html" id="ab"> About </a>
+                <a href="../pages/Community.html" id="c"> Community </a>
+                <a href="../pages/Shop.html" id="sh"> Shop </a>
+                <a href="../pages/Help.html" id="h"> Help </a>
+        </div>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+	</a>
+	
+		<script>
+function myFunction() {
+  var x = document.getElementById("links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</div>
+</div>
+        <div class="clearfloat"> </div>
+        <div id="mainpage">
+            <h1>Services</h1>
+            <br/>
+            <h2>Online Booking </h2>
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col-25">
+                    
+                        <label for="facility">Facility Name </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" placeholder="facility name" name="facilities" id="facility" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="address">Address of Facility </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" placeholder="address" name="addressess" id="address" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="phone">Contact Number </label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" placeholder="1(868)000-0000" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="address">Address of Individual</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" placeholder="address of individual" name="iaddress" id="iaddress" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="facilityn">Types of Facilities for use</label>
+                </div>
+                <div class="col-75">
+                    <select id="facilityn" name="facility name" required>
+                        <option selected disabled>Select a Facility</option>
+                        <option value="Indoor Sport">Indoor Sport</option>
+                        <option value="Outdoor Sport">Outdoor Sport</option>
+                        <option value="Gym">Gym</option>
+                        <option value="Park">Park</option>
+                        <option value="Grounds">Grounds</option>
+                        <option value="Aquatic">Aquatic</option>
+                        <option value="Multi-Purpose Indoor">Multi-Purpose Indoor</option>
+                        <option value="Multi-Purpose Outdoor">Multi-Purpose Outdoor</option>
+                    </select>
+                </div>
+            </div>
+            
+                
+                    <label>Activities Avaliable </label>
+                <br/>
+                
+                    <input type="checkbox" name="badmintion" id="badmin" />
+                    <label for="badmin">Badmintion</label>
+                    <br/>
+                    <input type="checkbox" name="basketball" id="basket" />
+                    <label for="basket">Basketball</label>
+                    <br/>
+                    <input type="checkbox" name="boxing" id="box" />
+                    <label for="box">Boxing</label>
+                    <br/>
+                    <input type="checkbox" name="canoe" id="kayak" />
+                    <label for="kayak">Canoe/Kayak</label>
+                    <br/>
+                    <input type="checkbox" name="Crick" id="cricket" />
+                    <label for="cricket">Cricket</label>
+                    <br/>
+                    <input type="checkbox" name="cycle" id="cycling" />
+                    <label for="cycling">Cycling</label>
+                    <br/>
+                    <input type="checkbox" name="horse" id="equestrian" />
+                    <label for="equestrian">Equestrian</label>
+                    <br/>
+                    <input type="checkbox" name="Fball" id="Football" />
+                    <label for="Football">Football</label>
+                    <br/>
+                    <input type="checkbox" name="Gol" id="Golf" />
+                    <label for="Golf">Golf</label>
+                    <br/>
+                    <input type="checkbox" name="Ju" id="Judo" />
+                    <label for="Judo">Judo</label>
+                    <br/>
+                    <input type="checkbox" name="Special" id="Solympics" />
+                    <label for="Solympics">Special Olympics</label>
+                    <br/>
+                    <input type="checkbox" name="Swim" id="swimming" />
+                    <label for="swimming">Swimming</label>
+                    <br/>
+                    <input type="checkbox" name="Tennis" id="Tennis" />
+                    <label for="Tennis">Tennis</label>
+                    <br/>
+                    <input type="checkbox" name="Vball" id="volleyball" />
+                    <label for="volleyball">Volleyball</label>
+                    <br/>
+                
+            
+            <br/>
+            <span class="formValidation"><span id="component58" class="formNoError">Please fill in the activities available you wish to partake in or organize.</span></span>
+            <br/>
+            
+
+                
+                    <input type="submit" value="Submit" name="register" id="sform" />&nbsp;&nbsp;&nbsp;
+                
+            
+        </div>
+		
+        <div class="clearfloat"> </div>
+        <footer>
+            <strong> Last Update December 8 2020. All Rights Reserved &copy; 2020 created by Kharyssa.K.George 1-3 McCarthy Street St.Augustine 1(868)486-7674 </strong>
+        </footer>
+		</div>
+</body>
+	
+</html>
